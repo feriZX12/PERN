@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^8.2.2"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "node server",
     "server": "cd server && nodemon",

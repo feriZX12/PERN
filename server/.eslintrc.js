@@ -9,7 +9,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 12,
   },
-  parser: "babel-eslint",
+  parser: '@babel/eslint-parser',
   plugins: ["babel", "prettier"],
   rules: {
     "no-console": "warn",

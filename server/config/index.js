@@ -16,7 +16,22 @@ const pool = new Pool({
   ssl: isProduction ? { rejectUnauthorized: false } : false,
 });
 
+// // Function to check the database connection
+// async function checkDatabaseConnection() {
+//   try {
+//     await pool.query("SELECT 1");
+//     console.log("Database connection successful!");
+//   } catch (error) {
+//     console.error("Database connection error:", error);
+//   } finally {
+//     pool.end(); // Close the database connection
+//   }
+// }
+
 module.exports = {
   query: (text, params) => pool.query(text, params),
   end: () => pool.end(),
 };
+
+// Call the checkDatabaseConnection function to test the connection
+// checkDatabaseConnection();
